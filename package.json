@@ -1,0 +1,37 @@
+{
+  "name": "react-minimal-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "pretty": "prettier --trailing-comma es5 --write 'src/**/*.{js,jsx,scss,html}'"
+  },
+  "author": "Robby Prima Suherlan <robbiejobs@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "d3": "^5.9.2",
+    "lodash": "^4.17.11",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^1.3.1",
+    "prettier": "^1.16.4",
+    "react-hot-loader": "^4.8.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
